@@ -3,7 +3,7 @@
 	<info>
 		<name>File 1</name>
 		<update version="1.0.0">
-			<file name="file1.xml" url="https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/user-yourname/file1.xml" />
+			<file name="file1.xml" url="https://raw.githubusercontent.com/surfingca/aurorabuildercustomindex/master/user-surfingca/file1.xml" />
 		</update>
 	</info>
 	
