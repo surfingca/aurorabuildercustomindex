@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Minotaur_Genasi</name>
+		<description></description>
+		<update version="1.0.0">
+			<file name="Minotaur_Genasi.xml" url="https://raw.githubusercontent.com/surfingca/aurorabuildercustomindex/master/user-surfingca/Minotaur_Genasi.xml" />
+		</update>
+	</info>
+	<element name="Minotaur Genasi" type="Race" source="Guildmasters’ Guide to Ravnica" id="ID_WOTC_GGTR_RACE_Minotaur">
+		<description>
+			<p>The minotaurs of Ravnica are strong in body, dedication, and courage. They are at home on the battlefield, willing to fight for their various causes. They combine a burning fury in battle with keen tactics that make them excellent commanders as well as valuable shock troops.</p>
+			<h4>HORNS AND HOOVES</h4>
+			<p>Minotaurs are barrel-chested humanoids with heads resembling those of bulls. Their horns range in size from about 1 foot long to great, curling weapons easily three times that length. They often ornament their horns with metal rings or sheathe them in metal to protect them from damage.</p>
+			<p class="indent">Manes of shaggy fur extend down minotaurs' necks and powerful backs, and males have long tufts of hair on their chins and cheeks. Their legs end in heavy, cloven hooves. Minotaurs are born with long, tufted tails, but minotaurs of the Ordruun clan (and some others) have their tails docked as part of a coming-of-age ceremony; they find the heavy armor of the Boros legion much more comfortable without a long tail in the way.</p>
+			<h4>STRENGTH AND ZEAL</h4>
+			<p>Minotaurs are zealous and love battle. They are found among the Gruul Clans, but the minotaurs of the Ordruun family line, long associated with the Boros Legion, are much better known and respected. Boros minotaurs choose the precision of the legion over the fury of the pack.</p>
+			<p class="indent">Minotaurs tend to vent their outrage through violence, but they aren't generally quick to anger. They are passionate, loving their friends and partners fiercely, and they laugh loud and long at good jokes.</p>
+			<h4>MINOTAUR TRAITS</h4>
+			<p>Your minotaur character has the following racial traits. These traits are also suitable for minotaurs in other D&amp;D worlds where these people have avoided the demonic influence of Baphomet.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2, and your Constitution score increase by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Minotaurs enter adulthood at around the age of 17 and can live up to 150 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Most minotaurs who join the Boros Legion lean toward lawful alignments, while those associated with the Cult of Rakdos or the Gruul Clans tend toward chaotic alignments.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Minotaurs average over 6 feet in height, and they have stocky builds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Horns.</em></strong> Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. Your ties to the Elemental Plane of Fire make your darkvision unusual: everything you see in darkness is in a shade of red.</p>
+			<p class="indent"><strong><em>Fire Resistance.</em></strong> You have resistance to fire damage.</p>
+			<p class="indent"><strong><em>Reach to the Blaze.</em></strong> You know the produce flame cantrip. Once you reach 3rd level, you can cast the burning hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Imposing Presence.</em></strong> You have proficiency in one of the following skills of your choice: Intimidation or Persuasion.</p>
+			<p class="indent"><strong><em>Hybrid Nature.</em></strong>You have two creature types: humanoid and monstrosity. You can be affected by a game effect if it works on either of your creature types.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Minotaur, and Primordial.</p>
+		</description>
+		<setters>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d8">5'4"</set>
+			<set name="weight" modifier="2d6">175 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" />
+			<stat name="constitution" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_GGTR_LANGUAGE_MINOTAUR" />
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+			<grant type="Racial Trait" id="ID_WOTC_GGTR_RACIAL_TRAIT_MINOTAUR_HORNS" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Racial Trait" id="ID_WOTC_POTA_RACIAL_TRAIT_GENASI_FIRE_FIRE_RESISTANCE" />
+      <grant type="Racial Trait" id="ID_WOTC_POTA_RACIAL_TRAIT_GENASI_FIRE_REACH_TO_THE_BLAZE" />
+			<grant type="Racial Trait" id="ID_WOTC_GGTR_RACIAL_TRAIT_MINOTAUR_IMPOSING_PRESENCE" />
+			<grant type="Racial Trait" id="ID_WOTC_UA_RACIAL_TRAIT_MINOTAUR_HYBRID_NATURE"/>
+
+		</rules>
+	</element>
+	<element name="Horns" type="Racial Trait" source="Guildmasters’ Guide to Ravnica" id="ID_WOTC_GGTR_RACIAL_TRAIT_MINOTAUR_HORNS">
+		<description>
+			<p>Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6+{{strength:modifier}}.</description>
+		</sheet>
+	</element>
+	<element name="Fire Resistance" type="Racial Trait" source="Princes of the Apocalypse" id="ID_WOTC_POTA_RACIAL_TRAIT_GENASI_FIRE_FIRE_RESISTANCE">
+    <description>
+      <p>You have resistance to fire damage.</p>
+    </description>
+    <sheet display="false">
+      <description>You have resistance to fire damage.</description>
+    </sheet>
+    <rules>
+		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+	</rules>
+  </element>
+  <element name="Reach to the Blaze" type="Racial Trait" source="Princes of the Apocalypse" id="ID_WOTC_POTA_RACIAL_TRAIT_GENASI_FIRE_REACH_TO_THE_BLAZE">
+    <description>
+      <p>You know the produce flame cantrip. Once you reach 3rd level, you can cast the burning hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</p>
+    </description>
+    <sheet>
+      <description>You know the produce flame cantrip. (Constitution)</description>
+      <description level="3">You know the produce flame cantrip. You can cast the burning hands spell once with this trait as a 1st-level spell. (1/LR) (Spellcasting Constitution)</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+      <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
+    </rules>
+  </element>
+	<element name="Hybrid Nature" type="Racial Trait" source="Unearthed Arcana: Centaurs and Minotaurs" id="ID_WOTC_UA_RACIAL_TRAIT_MINOTAUR_HYBRID_NATURE">
+		<description>
+			<p>You have two creature types: humanoid and monstrosity. You can be affected by a game effect if it works on either of your creature types.</p>
+		</description>
+		<sheet>
+			<description>You count as humanoid and monstrosity. You can be affected by a game effect if it works on either of your creature types.</description>
+		</sheet>
+	</element>
+	<element name="Imposing Presence" type="Racial Trait" source="Guildmasters’ Guide to Ravnica" id="ID_WOTC_GGTR_RACIAL_TRAIT_MINOTAUR_IMPOSING_PRESENCE">
+		<description>
+			<p>You have proficiency in one of the following skills of your choice: Intimidation or Persuasion.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in one of the following skills of your choice: Intimidation or Persuasion.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Imposing Presence (Minotaur)" supports="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+	</elements>
